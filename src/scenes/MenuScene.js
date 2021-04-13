@@ -2,9 +2,6 @@ export class MenuScene extends Phaser.Scene {
   constructor() {
     super('MENU')
   }
-  init(data) {
-  }
-
   create() {
     this.add.image(-80, -20, "title_bg").setOrigin(0.1);
     this.add.image(this.game.renderer.width / 2, this.game.renderer.height * 0.20, 'logo')
@@ -18,7 +15,7 @@ export class MenuScene extends Phaser.Scene {
     hoverSprite.setScale(2);
     hoverSprite.setVisible(false)
     let music = this.sound.add('iron');
-    music.play({ volume: 0.1 })
+    // music.play({ volume: 0.1 })
     this.anims.create({
       key: 'walk',
       frameRate: 4,

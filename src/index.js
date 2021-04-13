@@ -9,8 +9,7 @@ const gameConfig = {
   height: 600, physics: {
     default: 'arcade',
     arcade: {
-      gravity: { y: 0 },
-      debug: false,
+      gravity: { y: 0 }
     },
   },
   scene: [LoadScene, MenuScene, GameScene],

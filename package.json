@@ -5,16 +5,5 @@
   "repository": "https://github.com/AbdelrhmanAmin/Wanderer-Game",
   "author": "Neko Master",
   "license": "MIT",
-  "private": true,
-  "devDependencies": {
-    "babel-core": "6",
-    "babel-loader": "^7.0.0",
-    "babel-preset-env": "^1.7.0",
-    "copy-webpack-plugin": "^8.1.1",
-    "webpack-dev-server": "^2.0.0"
-  },
-  "dependencies": {
-    "phaser": "^3.0.0",
-    "webpack": "^3.12.0"
-  }
+  "private": true
 }

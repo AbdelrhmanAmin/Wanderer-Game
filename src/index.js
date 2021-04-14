@@ -3,16 +3,18 @@ import 'phaser';
 import { LoadScene } from './scenes/LoadScene';
 import { MenuScene } from './scenes/MenuScene';
 import { GameScene } from './scenes/GameScene';
+import { GameOverScene } from './scenes/GameOverScene';
 
 const gameConfig = {
   width: 800,
   height: 600, physics: {
     default: 'arcade',
     arcade: {
-      gravity: { y: 0 }
+      gravity: { y: 0 },
+      debug: true
     },
   },
-  scene: [LoadScene, MenuScene, GameScene],
+  scene: [LoadScene, MenuScene, GameScene, GameOverScene],
   render: {
     pixelArt: true
   }

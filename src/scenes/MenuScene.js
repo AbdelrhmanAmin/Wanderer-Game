@@ -15,7 +15,7 @@ export class MenuScene extends Phaser.Scene {
     hoverSprite.setScale(2);
     hoverSprite.setVisible(false)
     let music = this.sound.add('iron');
-    // music.play({ volume: 0.1 })
+    music.play({ volume: 0.2 })
     this.anims.create({
       key: 'walk',
       frameRate: 4,

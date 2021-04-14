@@ -9,6 +9,7 @@ export class LoadScene extends Phaser.Scene {
     this.load.tilemapTiledJSON('map', './assets/maps/map.json')
     this.load.image('foreground', './assets/greeting2.jpg');
     this.load.image('bg', './assets/black.jpg');
+    this.load.image('bg2', './assets/blacker.jpg');
     this.load.video('died', 'assets/died.mp4');
     this.load.image('potion', './assets/potion.png')
     this.load.image('title_bg', './assets/bg.jpg')
@@ -18,6 +19,7 @@ export class LoadScene extends Phaser.Scene {
     this.load.image('pause', './assets/pause.png')
     this.load.image('play', './assets/play.png')
     this.load.audio('iron', './assets/Ensiferum - Iron.mp3')
+    this.load.audio('bgmusic', './assets/fato_shadow_-_pray_for_satan.mp3')
     this.load.spritesheet('cat', './assets/image/cat.png', {
       frameWidth: 32,
       frameHeight: 32

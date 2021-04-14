@@ -4,6 +4,11 @@
   "description": "A game of a warrior who wanders around forsaken land to slay the invaders and collect goods",
   "repository": "https://github.com/AbdelrhmanAmin/Wanderer-Game",
   "author": "Neko Master",
+  "scripts": {
+    "webpack": "webpack --watch",
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production"
+  },
   "license": "MIT",
   "private": true,
   "devDependencies": {

@@ -76,6 +76,7 @@ export class GameScene extends Phaser.Scene {
     this.setValue(this.healthBar, this.hp);
     if (this.hp <= 0) {
       this.hp = 0;
+      this.music.pause()
       this.scene.stop()
       this.scene.start('GAMEOVER')
     }
@@ -109,8 +110,8 @@ export class GameScene extends Phaser.Scene {
     })
   }
   create() {
-    let music = this.sound.add('bgmusic');
-    music.play({ volume: 0.2 })
+    this.music = this.sound.add('bgmusic');
+    this.music.play({ volume: 0.2 })
     createWarAnims(this.anims)
     createGoblinAnims(this.anims)
     this.hp = 100;
@@ -280,6 +281,7 @@ export class GameScene extends Phaser.Scene {
     }, false, this);
 
     this.traps.setTileIndexCallback(trapIndex, () => {
+      this.music.pause()
       this.scene.stop()
       this.scene.start('GAMEOVER')
     });

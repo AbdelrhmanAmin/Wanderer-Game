@@ -3,6 +3,7 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: {
+    mode: 'development',
     app: './src/index.js',
     'production-dependencies': ['phaser']
   },
